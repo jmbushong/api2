@@ -1,0 +1,283 @@
+*, ::before, ::after{
+    box-sizing: inherit;
+    
+}
+
+/* ------------ youtube.com/CodeExplained ------------ */
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: #C1C8E4; */
+    background-color: #21006f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ container ------------ */
+.container{
+    padding:10px;
+    width:380px;
+    float:left;
+    margin: 70px;
+
+   
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 380px;
+    height:150px;
+    /* background-color: #5AB9EA; */
+    background-color:#fe3218;
+    font-weight: bold;
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+
+ 
+}
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+   
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color:white;
+    font-size: 45px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 20%;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #FFF;
+    overflow: auto;
+
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+
+
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color:  #5680E9;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #5680E9;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+.far{
+    
+    font-size: 20px;
+    margin: 15px;
+    color: #5680E9;
+    position: absolute;
+    left: 300px;
+ 
+}
+
+
+
+.far:hover{
+    color: 	#e95680;
+}
+
+
+.blue{
+    background-color:  #8860D0 ;
+    text-align: center;
+
+
+}
+
+.blue a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+
+p{
+    color:#5680E9;
+}
+
+
+
+.holdsSearchResults{
+    width: 380px;
+    margin:70px;
+    transform: translate(3%, 44.5%);
+    position: absolute;
+    background: white;
+}
+
+.holdsSearchResults p{
+    text-align:center;
+    height: 40px;
+    padding:0;
+    margin:0;
+    
+}
+
+.holdsSearchResults p:hover{
+    background: whitesmoke;
+}
+
+.firstPage{
+    height: 85vh;
+    margin: 50px 0px;
+    background-color: white;
+    
+}
+
+.mainTitle{
+    top: 20%;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.pageTitle_sub{
+    transform:translate(50%);
+    margin-bottom: 50px;
+}
+
+#cal{
+    margin-left: 30%;
+    height: 60px;
+    width: 260px;
+    font-size: 20px;
+    /* border: 3px solid #5680E9; */
+   
+    border: 3px solid #ff911a;
+    
+}
+
+.pageTitle{
+    font-size: 80px;
+}
+
+/* Circle */
+
+
+
+svg{
+    position: absolute;
+    transform: translate(55%, 30%);
+
+}
+
+
+.progress-ring {
+  
+}
+
+.progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  display:none;
+}
+
+text{
+    font-size: 30px;
+}
